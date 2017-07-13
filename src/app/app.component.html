@@ -1,5 +1,13 @@
 <h1>
-  {{title}}
-  <app-hello-world></app-hello-world>
-  <app-user-list></app-user-list>
+    {{title}}
+    <!--<app-hello-world></app-hello-world>
+    <app-user-list></app-user-list>-->
+    <hr>
+    <section>
+        <md-input-container>
+            <input mdInput [mdDatepicker]="picker" placeholder="Choose a date">
+            <button mdSuffix [mdDatepickerToggle]="picker"></button>
+        </md-input-container>
+        <md-datepicker #picker></md-datepicker>
+    </section>
 </h1>
